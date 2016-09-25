@@ -8,3 +8,4 @@ RUN mkdir /opt && cd /opt && unzip /tmp/activator.zip && rm /tmp/activator.zip
 RUN ln -s /opt/activator-1.3.10-minimal/bin/activator /bin/activator
 RUN cd /root
 RUN activator help; exit 0
+WORKDIR /root
